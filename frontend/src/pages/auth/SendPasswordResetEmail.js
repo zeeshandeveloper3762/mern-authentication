@@ -9,7 +9,7 @@ const SendPasswordResetEmail = () => {
     msg: "",
     type: ""
   })
-  const [sendPasswordResetEmail, { isLoading }] = useSendPasswordResetEmailMutation()
+  const [sendPasswordResetEmail] = useSendPasswordResetEmailMutation()
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);

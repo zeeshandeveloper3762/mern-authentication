@@ -11,7 +11,7 @@ const Registration = () => {
     type: ""
   })
   const navigate = useNavigate();
-  const [registerUser, { isLoading }] = useRegisterUserMutation()
+  const [registerUser] = useRegisterUserMutation()
   const handleSubmit = async (e) => {
     e.preventDefault();
     const data = new FormData(e.currentTarget);
